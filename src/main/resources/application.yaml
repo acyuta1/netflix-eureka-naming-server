@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: netflix-eureka-naming-server
+server:
+  port: 8761
+
+#Don't let this application to register itself, since this is the base eureka naming server.
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
